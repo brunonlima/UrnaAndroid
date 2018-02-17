@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+    <EditText 
+        android:id="@+id/txtTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numeric="integer"
+        android:text="Título de Eleitor"
+        />
+    <EditText 
+         android:id="@+id/txtNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:text="Nome Eleitor"
+        />
+    
+ <Button
+     android:id="@+id/btn_cadastroEleitor"
+     android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:text="Cadastrar Eleitor"
+         android:onClick="cadastroEleitorClick"/>
+</LinearLayout>

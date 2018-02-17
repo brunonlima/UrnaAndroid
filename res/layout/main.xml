@@ -1,0 +1,63 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0000"
+    tools:context=".Main" >
+
+    <!--
+         The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc.
+    -->
+
+    <!--
+         This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows.
+    -->
+
+    <FrameLayout
+        android:layout_width="160dp"
+        android:layout_height="457dp"
+        android:fitsSystemWindows="true" >
+
+       
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="452dp"
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:text="VOTESYS"
+        android:textColor="#00FF99"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/fullscreen_content_controls"
+        style="?buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black_overlay"
+        android:orientation="vertical"
+        tools:ignore="UselessParent" >
+
+        <Button
+            android:id="@+id/btn_eleitor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="EleitorClick"
+            android:text="Área do Eleitor" />
+
+        <Button
+            android:id="@+id/btn_funcionario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="FuncionarioClick"
+            android:text="Área do Funcionário" />
+
+    </LinearLayout>
+
+</FrameLayout>

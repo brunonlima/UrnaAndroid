@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0000" >
+    
+ <Button
+            android:id="@+id/btn_cadastrarEleitor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="cadastrarEleitorClick"
+            android:text="Cadastrar Eleitor" />
+
+        <Button
+            android:id="@+id/btn_consultarEleitor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="consultarEleitorClick"
+            android:text="Consultar Eleitor" />
+    
+    
+</LinearLayout>
